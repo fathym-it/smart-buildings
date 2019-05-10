@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/_theming';
+
+@include mat-core();
+
+$forge-app-primary: mat-palette($mat-indigo);
+$forge-app-accent: mat-palette($mat-pink, A200, A100, A400);
+
+$forge-app-warn: mat-palette($mat-red);
+
+$forge-app-theme: mat-light-theme($forge-app-primary, $forge-app-accent, $forge-app-warn);
+
+@include angular-material-theme($forge-app-theme);
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+
+  .mat-spinner {
+    margin: auto;
+  }
+
+  .filler {
+    flex: auto 1 1;
+  }
+
+  .mat-full-width {
+    width: 100%;
+  }
+
+  .mat-list-item {
+    &.active {
+      background-color: transparentize($color: #000000, $amount: 0.95);
+    }
+  }
+}

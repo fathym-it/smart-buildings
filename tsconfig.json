@@ -19,10 +19,10 @@
 			"dom"
 		],
 		"paths": {
-			"common": [
+			"@fathym-it/smart-buildings-common": [
 				"dist/common"
 			],
-			"common/*": [
+			"@fathym-it/smart-buildings-common/*": [
 				"dist/common/*"
 			]
 		}
