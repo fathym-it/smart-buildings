@@ -1,4 +1,4 @@
-{ 
+{
     "templates": {
         "repository": "lowcodeunit-devkit/lcu-cli-templates-core",
         "scope": "@fathym-it",
@@ -6,7 +6,11 @@
     },
     "config": {
       "wc": ["wc/smart-buildings.lcu.js"],
-      "solutions": {},
+      "solutions": {
+        "config-manager": {
+          "element": "smart-buildings-config-manager-element"
+        }
+      },
       "elements": {},
       "flux": {},
       "dependencies": {}
